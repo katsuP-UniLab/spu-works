@@ -1,6 +1,7 @@
 thb = input('Enter Thai Baht : ')
 
-usd_based = 34.33
+# THB TO USD @ 1724139203107
+usd_based = 34.33 
 
 usd_out = float(thb) / usd_based
 
