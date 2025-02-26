@@ -2,17 +2,17 @@ const menu = document.querySelector("#menu");
 
 menu.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark gradient-bg">
 <div class="container-fluid">
-  <a class="navbar-brand" href="/"><img src="https://suphakit.net/favicon.png" style="width: 30px; aspect-ratio: 1/1;" alt=""></a>
+  <a class="navbar-brand" href="/week7"><img src="https://suphakit.net/favicon.png" style="width: 30px; aspect-ratio: 1/1;" alt=""></a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/">Home</a>
+        <a class="nav-link active" aria-current="page" href="/week7">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/product">Product</a>
+        <a class="nav-link" href="/week7/product">Product</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -29,7 +29,7 @@ menu.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark gradient-bg">
         <a class="nav-link" href="#" tabindex="-1">About Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/contact" tabindex="-1">Contact</a>
+        <a class="nav-link" href="/week7/contact" tabindex="-1">Contact</a>
       </li>
     </ul>
     <form class="d-flex">
