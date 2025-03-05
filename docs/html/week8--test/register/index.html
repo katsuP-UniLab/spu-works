@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>project_67707665</title>
+
+  <link rel="shortcut icon" href="https://suphakit.net/favicon.png" type="image/png">
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../src/css/main.css">
+
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="../src/css/pages/register.css">
+
+  <!-- Components CSS -->
+  <link rel="stylesheet" href="../src/css/Components/nav.css">
+  <link rel="stylesheet" href="../src/css/Components/footer.css">
+
+  <!-- SweetAlert 2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.all.min.js"></script>
+</head>
+<body>
+  <div id="nav"></div>
+
+  <div id="body">
+    <h1>
+      Register
+    </h1>
+
+    <form id="register-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name">
+
+      <label for="mail">E-mail Address</label>
+      <input type="text" id="mail" name="mail">
+
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone">
+
+      <label for="course">Select Course</label>
+      <select id="course" name="course">
+        <option value="" disabled selected>-</option>
+      </select>
+
+      <button type="submit">
+        Register
+      </button>
+    </form>
+  </div>
+
+  <div id="footer"></div>
+
+  <script src="../src/js/Components/navbar.js"></script>
+  <script src="../src/js/Components/footer.js"></script>
+
+  <script>
+    for (let i = 0; i < 6; i++) {
+      document.querySelector('#course').innerHTML += `<option value="c-${i+1}">Course ${i+1}</option>`
+    }
+
+    document.querySelector('#register-form').addEventListener('submit', (e) => {
+      e.preventDefault()
+    })
+  </script>
+</body>
+</html>

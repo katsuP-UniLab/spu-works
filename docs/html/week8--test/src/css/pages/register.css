@@ -1,0 +1,37 @@
+#body {
+  width: 100%;
+  min-height: 85dvh;
+  
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  #register-form {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    input, select {
+      padding: .5rem;
+      border-radius: 5px;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      margin-bottom: .5rem;
+      outline: 0;
+    }
+
+    input:focus, select:focus {
+      border: 1px solid #fe6e6f;
+    }
+
+    button[type="submit"]{
+      width: 5rem;
+      padding: .5rem 0;
+      border: 0;
+      border-radius: .5rem;
+      background: #007bff;
+      color: whitesmoke;
+    }
+  }
+}
